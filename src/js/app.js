@@ -22,7 +22,7 @@ var myApp = new Framework7({
   root: '#app', // App root element
   component: App, // App main component
   name: 'Сэйв.info', // App name
-  theme: 'ios', // Automatic theme detection
+  theme: 'auto', // Automatic theme detection
   routes: routes,
   // Input settings
   input: {
@@ -599,20 +599,30 @@ $$(document).on('page:init', '.page[data-name="settings"]', function(page){
       el: '.toggle',
       on: {
         change: function(){
+
+            myApp.dialog.alert('1');
             
-            if(toggler.checked){
+            if(toggler.checked == true){
+
+                myApp.dialog.alert('2.2');
 
                 isChecked = 1;
                 document.removeEventListener("resume", onResumeOne, false); 
                 document.addEventListener("pause", onPause, false);
                 document.addEventListener("resume", onResume, false);
 
+                myApp.dialog.alert('3.2');
+
             } else {
+
+                myApp.dialog.alert('2.1');
 
                 isChecked = 0;
                 document.removeEventListener("pause", onPause, false);
                 document.removeEventListener("resume", onResume, false);
                 document.addEventListener("resume", onResumeOne, false); 
+
+                myApp.dialog.alert('3.1');
             }
 
             recordSettings(isChecked);
@@ -829,9 +839,12 @@ function onResumeOne() {
 
 function recordSettings (isChecked) {
 
+    myApp.dialog.alert('4');
+
     db.executeSql('CREATE TABLE IF NOT EXISTS setTable(setting, value)');
     db.executeSql('UPDATE setTable SET value = ? WHERE setting = ?', [isChecked, 'pin'], function(result) {    
-        // ok
+        myApp.dialog.alert('4');
+    // ok
     });
 }
 
