@@ -1,0 +1,44 @@
+<template>
+  <div id="app">
+    <!-- Your main view, should have "view-main" class -->
+    <div class="views tabs safe-areas">
+
+      <div class="toolbar tabbar-labels toolbar-bottom">
+
+        <div class="toolbar-inner">
+
+          <a href="/" class="tab-link tab-link-active light-blue">
+            <i class="fa fa-envelope "></i>
+            <span class="tabbar-label">Сообщения</span>
+          </a>
+          <a href="/balance/" class="tab-link tab-link-active light-blue">
+            <i class="fa fa-ruble-sign"></i>
+            <span class="tabbar-label">Финансы</span>
+          </a>
+          <a href="/settings/" class="tab-link tab-link-active light-blue">
+            <i class="fa fa-cogs"></i>
+            <span class="tabbar-label">Настройки</span>
+          </a>
+        </div>
+      </div>
+
+      <div id="view-home" class="view view-main view-init tab tab-active" data-url="/" data-ios-swipe-back="false" data-md-swipe-back="false" data-component-cache="false">
+      </div>
+
+      <div id="view-balance" class="view view-init tab" data-view="balance" data-url="/balance/">
+      </div>
+
+      <div id="view-settings" class="view view-init tab" data-view="settings" data-url="/settings/">
+      </div>
+
+
+
+
+    </div>
+
+
+  </div>
+
+</template>
+<script>
+</script>

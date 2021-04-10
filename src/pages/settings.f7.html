@@ -1,0 +1,85 @@
+<template>
+<div class="page" data-name="settings">
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="title">Настройки</div>
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="block-title">Приложение</div>
+    <div class="list no-hairlines-md no-margin">
+      <ul>
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-title">5-ти минутный вход без кода</div>
+              <div class="item-after">
+                <label class="toggle">
+                  <input type="checkbox" id="checkCode" />
+                  <span class="toggle-icon" style="background-color: #4d92ea;"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <br/>
+      <li>    
+       <div class="row no-hairlines-md">
+            <p href="#" class="col-10"></p>
+            <a href="#" class="col-80 button button-large button-outline color-blue rightblock">Обновить сообщения</a>
+            <p href="#" class="col-10"></p>
+        </div>
+      </li>
+      <br/>
+        <li>    
+         <div class="row no-hairlines-md">
+              <p href="#" class="col-10"></p>
+              <a href="#" class="col-80 button button-large button-outline color-blue" id="pincodechange">Сменить пинкод</a>
+              <p href="#" class="col-10"></p>
+          </div>
+      </li>
+      <br/>
+        <li>
+         <div class="row no-hairlines-md" style="padding-bottom: 25px;">
+              <p href="#" class="col-10"></p>
+              <a href="#" class="col-80 button button-large button-outline color-semired" id="userremove">Сброс данных приложения</a>
+              <p href="#" class="col-10"></p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <div class="row">
+        <div class="col pan">
+          <p><img class="image dynamic-popover" alt="1" src="static/ico.jpg" width="18%"/></p>
+          <p>Сэйв Info</p>
+          <p>Версия: 3.0.3</p>
+        </div>
+      </div>
+    </div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<div class="block-title block-title-medium">Пояснения</div>
+
+<div class="block block-strong">
+  <p>1. Переключатель "5-ти минутный вход без кода" позволяет сворачивать в фоновый режим не закрывая приложение, чтобы затем вернуться, не вводя при этом свой пин-код, действует в течение 5-ти минут.</p>
+  <p>2. Обновление сообщений по кнопке позволяет устранить ряд проблем с некорректным отображением сообщений. По нажатию на кнопку все сообщения перезагрузятся. Нажмите, если перешли с другого устройства и не видите своих сообщений и объектов.</p>
+  <p>3. Сброс данных приложения нужен для того, чтобы сбросить все данные приложения, в том числе учетную запись из внутренней памяти устройства и произвести регистрацию заново, если возникнет такая необходимость.</p>
+  
+
+</div>
+
+  </div>
+</div>
+
+</template>
+<script>
+export default {};
+</script>

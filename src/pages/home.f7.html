@@ -1,0 +1,54 @@
+<template>
+        
+          <div class="page no-navbar" data-name="home">
+          <!-- Top Navbar -->
+
+            <div class="list no-margin">
+              <ul>
+                <li>
+                  <a class="item-link smart-select smart-select-init" data-open-in="sheet" data-sheet-close-text="Закрыть">
+                    <select name="objectselect" id="objectsel">
+                      <option value="all" selected>Показать все</option>
+                    </select>
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">Объект №</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- <div class="clear"></div> -->
+              <div class="row" style="background-color: #a2cbf9">
+                  <div class="pan col-20">Дата:</div>
+                  <div class="pan col-25"><input id="dateone" value="" type="text" placeholder="От"></div>
+                  <div class="pan col-25"><input id="datetwo" value="" type="text" placeholder="До"></div>
+                  <button class="button col-30 sendik">Отчёт</button>
+              </div>
+
+          <!-- Scrollable page content-->
+          <div class="page-content" style="background-image: url('static/bg.jpg'); background-size: contain; background-repeat: no-repeat;">
+
+            <div class="messages-content" style="background: unset;">
+              <div class="messages" style="background: unset; ">
+              
+              </div>
+                <div class="end row" style="margin-bottom: 120px; margin-top: 30px;">
+                  <div class="col"></div>
+                  <div class="col"><a href="#" id="btnmore" class="button button-fill" style="background-color: #4d92ea;">Больше</a></div>
+                  <div class="col"></div>
+                  
+                  <p class="ifmiss" style="display:none">Сообщений не найдено.</p>
+                </div>
+            </div>
+
+          </div>
+
+
+        </div>
+</template>
+<script>
+export default {}
+</script>
