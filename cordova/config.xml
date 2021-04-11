@@ -77,9 +77,9 @@
     </platform>
     <preference name="DisallowOverscroll" value="true" />
     <preference name="BackupWebStorage" value="local" />
-    <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="AutoHideSplashScreen" value="true" />
     <preference name="ShowSplashScreenSpinner" value="false" />
-    <preference name="SplashScreenDelay" value="2000" />
+    <preference name="SplashScreenDelay" value="3000" />
     <preference name="Suppresses3DTouchGesture" value="true" />
     <preference name="Allow3DTouchLinkPreview" value="false" />
     <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
