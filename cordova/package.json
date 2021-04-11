@@ -35,7 +35,6 @@
     "plugins": {
       "cordova-plugin-statusbar": {},
       "cordova-plugin-keyboard": {},
-      "cordova-plugin-splashscreen": {},
       "cordova-plugin-whitelist": {},
       "onesignal-cordova-plugin": {},
       "cordova-plugin-device": {},
@@ -47,7 +46,8 @@
       "cordova-plugin-vibration": {},
       "cordova-custom-config": {},
       "cordova-plugin-exit": {},
-      "cordova-sqlite-evcore-extbuild-free": {}
+      "cordova-sqlite-evcore-extbuild-free": {},
+      "cordova-plugin-splashscreen": {}
     },
     "platforms": [
       "ios",

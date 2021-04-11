@@ -75,11 +75,16 @@
         <icon height="167" src="res/icon/ios/icon-83.5x83.5@2x.png" width="167" />
         <icon height="1024" src="res/icon/ios/icon-512x512@2x.png" width="1024" />
     </platform>
+
+    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="BackupWebStorage" value="local" />
+
     <preference name="AutoHideSplashScreen" value="true" />
     <preference name="ShowSplashScreenSpinner" value="false" />
     <preference name="SplashScreenDelay" value="3000" />
+    <preference name="SplashScreen" value="screen"/>
+
     <preference name="Suppresses3DTouchGesture" value="true" />
     <preference name="Allow3DTouchLinkPreview" value="false" />
     <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
