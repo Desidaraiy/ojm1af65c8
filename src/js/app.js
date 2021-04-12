@@ -829,12 +829,8 @@ function onResumeOne() {
 }
 
 function recordSettings (isChecked) {
-
-
-
     db.executeSql('CREATE TABLE IF NOT EXISTS setTable(setting, value)');
     db.executeSql('UPDATE setTable SET value = ? WHERE setting = ?', [isChecked, 'pin'], function(result) {    
-        myApp.dialog.alert('ok');
     // ok
     });
 }
